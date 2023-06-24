@@ -1,0 +1,23 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AdvanceOOP_2
+{
+    public class Cat: IAnimal
+    {
+        public void MakeSound()
+        {
+            Console.WriteLine("Meaow");
+        }
+
+        public void Move()
+        { 
+            Console.WriteLine("Jumping and Climbing");
+        
+        }
+        
+    }
+}
