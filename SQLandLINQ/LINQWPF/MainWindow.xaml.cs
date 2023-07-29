@@ -21,10 +21,20 @@ namespace LINQWPF
     /// </summary>
     public partial class MainWindow : Window
     {
+        StudentLINQDataContext dataContext;
         public MainWindow()
         {
             string connectionString = ConfigurationManager.ConnectionStrings["LINQWPF.Properties.Settings.StudentsInventoryConnectionString"].ConnectionString;
+            dataContext = new StudentLINQDataContext(connectionString);
             InitializeComponent();
+            SHowAllStudentFromTuDarmstadt();
+        }
+        public void SHowAllStudentFromTuDarmstadt()
+        {
+            var studentFromTudarmstadt = from student in dataContext.Students
+                                         where student.University.Name == "Tu Darmstadt"
+                                         select student;
+            MyData.ItemsSource = studentFromTudarmstadt;
         }
     }
 }

@@ -36,7 +36,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -55,6 +57,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="StudentLINQ.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StudentLINQ.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="StudentsInventoryDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StudentsInventoryDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="testDatabaseDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -95,6 +107,25 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <None Include="StudentLINQ.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>StudentLINQ.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StudentLINQ.dbml.layout">
+      <DependentUpon>StudentLINQ.dbml</DependentUpon>
+    </None>
+    <None Include="StudentsInventoryDataSet.xsc">
+      <DependentUpon>StudentsInventoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StudentsInventoryDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StudentsInventoryDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StudentsInventoryDataSet.xss">
+      <DependentUpon>StudentsInventoryDataSet.xsd</DependentUpon>
+    </None>
     <None Include="testDatabaseDataSet.xsc">
       <DependentUpon>testDatabaseDataSet.xsd</DependentUpon>
     </None>
@@ -109,6 +140,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
