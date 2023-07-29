@@ -1,4 +1,5 @@
-﻿using SOLIDP.OpenClass;
+﻿using SOLIDP.LISK;
+using SOLIDP.OpenClass;
 using SOLIDP.SRp;
 
 namespace SOLIDP
@@ -12,9 +13,21 @@ namespace SOLIDP
             //invoice.AddInvoice();
             //var amount = OCInvoice.GetInvoiceDiscount(4000, InvoiceType.FinalInvoice);
             //Console.WriteLine(amount);
-            InvoiceOP fiInvoice = new FinalInvoice();
-            double finalInvoiceamount = fiInvoice.GetInvoiceDiscount(500);
-            Console.WriteLine("Final Invoice amount :{0}", finalInvoiceamount);
+            //InvoiceOP fiInvoice = new FinalInvoice();
+            //double finalInvoiceamount = fiInvoice.GetInvoiceDiscount(500);
+           // Console.WriteLine("Final Invoice amount :{0}", finalInvoiceamount);
+
+
+
+            //Liskov Principle
+           
+
+
+            IFruit fruits = new Apple();
+            Console.WriteLine(fruits.GetColor());
+            fruits = new Orange();
+            Console.WriteLine(fruits.GetColor());
+
         }
     }
 }

@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SOLIDP
+namespace DesignPattern1.AbstractClass
 {
-    public interface IFruit
+    internal interface ICar
     {
-        string GetColor();
+        void GetDetails();
     }
 }
