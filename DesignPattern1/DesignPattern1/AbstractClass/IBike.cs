@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SOLIDP
+namespace DesignPattern1.AbstractClass
 {
-    public interface IFruit
+    public interface IBike
     {
-        string GetColor();
+        void GetDetails();
     }
 }

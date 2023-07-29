@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace SOLIDP.LISK
 {
-    internal class Orange
+    public class Orange : IFruit
     {
+
+        public string GetColor()
+        {
+            return "Orange";
+        }
     }
 }

@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace SOLIDP
 {
-    internal class AppleBaseClass
+    public class AppleBaseClass
     {
+        public virtual string GetColor()
+        {
+            return "Red";
+        }
     }
 }

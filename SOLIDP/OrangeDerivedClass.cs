@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace SOLIDP
 {
-    internal class OrangeDerivedClass
+    public class OrangeDerivedClass : AppleBaseClass  
     {
+        public override string GetColor()
+        {
+            return "Orange";
+        }
     }
 }
