@@ -1,12 +1,6 @@
-﻿namespace DesignPattern1
-{
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-           //
-        
-           ClientCertificateOption.WithoutUsingFactoryCreditCard();
-        }
-    }
-}
+﻿using DesignPatternPart1and2.DP_part_3_Structural.Decorator;
+
+
+//ClientCertificateOption.WithoutUsingFactoryCreditCard();
+//Decorator 
+ClientCodeForDecorator UseDecoratorCode();

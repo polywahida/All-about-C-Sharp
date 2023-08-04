@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQA", "LINQA.csproj", "{B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQWPF", "..\LINQWPF\LINQWPF.csproj", "{0221D192-CD81-4AFA-8E14-7D00D6BF2B19}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatternPart1and2", "..\..\DesignPattern1\DesignPattern1\DesignPatternPart1and2.csproj", "{17D8A6BC-67B7-4D05-B5E6-867C673DBA75}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0221D192-CD81-4AFA-8E14-7D00D6BF2B19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0221D192-CD81-4AFA-8E14-7D00D6BF2B19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0221D192-CD81-4AFA-8E14-7D00D6BF2B19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17D8A6BC-67B7-4D05-B5E6-867C673DBA75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17D8A6BC-67B7-4D05-B5E6-867C673DBA75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17D8A6BC-67B7-4D05-B5E6-867C673DBA75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17D8A6BC-67B7-4D05-B5E6-867C673DBA75}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
