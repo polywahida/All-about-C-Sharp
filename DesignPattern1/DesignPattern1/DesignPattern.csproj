@@ -12,4 +12,11 @@
     <Folder Include="Fluent\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="F:\All about C#\DesignPattern1\DesignPattern1\DP part-3" />
+    <None Include="Structural\Proxy\.editorconfig">
+      <T></T>
+    </None>
+  </ItemGroup>
+
 </Project>
